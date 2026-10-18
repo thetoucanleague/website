@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOUCAN League - Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav aria-label="main navigation">
+        <a href="index.html" class="nav-brand">TOUCAN League</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <ul class="nav-links">
+          <li><a href="standings.html">Standings</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="badges.html">Badges</a></li>
+          <li><a href="records.html">Records</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>TOUCAN League</h1>
+      <hr>
+      <p>The TOUCAN League is the premier student archery league in the United Kingdom. 14 clubs from the East and West Midlands competing at the highest levels of national and student archery.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="standings-section">
+      <div class="standings-header">
+        <h2 class="section-title">Current Standings Highlights</h2>
+        
+        <div class="division-toggle">
+          <button id="btn-div1" class="toggle-btn active" onclick="switchDivision('div1')">Division 1</button>
+          <button id="btn-div2" class="toggle-btn" onclick="switchDivision('div2')">Division 2</button>
+        </div>
+      </div>
+
+      <div id="standings-tables-container" class="tables-grid"></div>
+
+      <p class="view-all-link"><a href="standings.html">View full standings table &rarr;</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h4>Social Media</h4>
+          <ul class="social-links">
+            <li><a href="https://www.facebook.com/groups/buttsleague/" class="fa fa-facebook"></a></li>
+            <li><a href="https://twitter.com/BUTTSLeague" class="fa fa-twitter"></a></li>
+            <li><a href="https://www.instagram.com/toucanarcheryleague/" class="fa fa-instagram"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; TOUCAN League 2026. Built by Benjamin Pepper.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

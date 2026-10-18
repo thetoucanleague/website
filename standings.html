@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOUCAN League - Standings</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="main navigation">
+        <a href="index.html" class="nav-brand">TOUCAN League</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <ul class="nav-links">
+          <li><a href="standings.html" class="active">Standings</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="badges.html">Badges</a></li>
+          <li><a href="records.html">Records</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-header">
+      <h1 class="section-title">League Standings</h1>
+    </div>
+
+    <section class="standings-full-section">
+      <div class="badge-controls">
+        <div class="toggle-group">
+          <span class="toggle-label">Division:</span>
+          <div class="btn-group" id="division-toggles">
+            <button class="toggle-btn active" onclick="setStandingsDivision('div1')">Division 1</button>
+            <button class="toggle-btn" onclick="setStandingsDivision('div2')">Division 2</button>
+          </div>
+        </div>
+
+        <div class="toggle-group">
+          <span class="toggle-label">Category:</span>
+          <div class="btn-group" id="experience-toggles">
+            <button class="toggle-btn active" onclick="setStandingsCategory('experienced')">Experienced</button>
+            <button class="toggle-btn" onclick="setStandingsCategory('novice')">Novice</button>
+          </div>
+        </div>
+      </div>
+
+      <h2 id="standings-table-title" class="table-heading-title">DIVISION 1 EXPERIENCED TABLE</h2>
+
+      <div class="standings-table-container">
+        <table class="standings-detailed-table">
+          <thead>
+            <tr class="header-group-row">
+              <th rowspan="2" class="col-pos">Position</th>
+              <th rowspan="2" class="col-uni">University</th>
+              <th colspan="2" class="group-header">Leg 1</th>
+              <th colspan="2" class="group-header">Leg 2</th>
+              <th colspan="2" class="group-header">Leg 3</th>
+              <th colspan="2" class="group-header">Champs</th>
+              <th colspan="2" class="group-header">Total</th>
+            </tr>
+            <tr class="header-sub-row">
+              <th>Score</th>
+              <th>Pts</th>
+              <th>Score</th>
+              <th>Pts</th>
+              <th>Score</th>
+              <th>Pts</th>
+              <th>Score</th>
+              <th>Pts</th>
+              <th>Aggregate</th>
+              <th>Pts</th>
+            </tr>
+          </thead>
+          <tbody id="standings-table-body">
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h4>Social Media</h4>
+          <ul class="social-links">
+            <li><a href="https://www.facebook.com/groups/buttsleague/" class="fa fa-facebook" target="_blank" aria-label="Facebook"></a></li>
+            <li><a href="https://twitter.com/BUTTSLeague" class="fa fa-twitter" target="_blank" aria-label="Twitter"></a></li>
+            <li><a href="https://www.instagram.com/toucanarcheryleague/" class="fa fa-instagram" target="_blank" aria-label="Instagram"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; TOUCAN League 2026. Built by Benjamin Pepper.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

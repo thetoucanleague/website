@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOUCAN League - Badges</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav aria-label="main navigation">
+        <a href="index.html" class="nav-brand">TOUCAN League</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <ul class="nav-links">
+          <li><a href="standings.html">Standings</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="badges.html">Badges</a></li>
+          <li><a href="records.html">Records</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-header">
+      <h1 class="section-title">Toucan Badges</h1>
+    </div>
+
+    <div class="content-card">
+      <h2>What are the badges & How to claim</h2>
+      <p>Badges are...</p>
+    </div>
+
+    <div class="content-card">
+      <h2>Milestone Scores</h2>
+      <p>To claim the badge you need to have atleast shot the related milestone score</p>
+      <section class="badges-section">
+        <div class="badge-controls">
+          <div class="toggle-group">
+            <span class="toggle-label">Category:</span>
+            <div class="btn-group" id="category-toggles">
+              <button class="toggle-btn active" onclick="setCategory('open')">Open</button>
+              <button class="toggle-btn" onclick="setCategory('female')">Female</button>
+            </div>  
+          </div>
+
+          <div class="toggle-group">
+            <span class="toggle-label">Round:</span>
+            <div class="btn-group" id="round-toggles">
+              <button class="toggle-btn active" onclick="setRound('portsmouth')">Portsmouth</button>
+              <button class="toggle-btn" onclick="setRound('wa18')">WA 18</button>
+              <button class="toggle-btn" onclick="setRound('wa720')">WA 720</button>
+              <button class="toggle-btn" onclick="setRound('wa900')">WA 900</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="badge-table-container">
+          <table class="badge-table">
+            <thead>
+              <tr>
+                <th class="col-bowstyle">Bowstyle</th>
+                <th class="badge-col col-white">White</th>
+                <th class="badge-col col-black">Black</th>
+                <th class="badge-col col-blue">Blue</th>
+                <th class="badge-col col-red">Red</th>
+                <th class="badge-col col-gold">Gold</th>
+              </tr>
+            </thead>
+            <tbody id="badge-table-body">
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <div class="content-card">
+      <h2>Purple badge</h2>
+      <p>Its ..</p>
+      <p>Past winners:</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h4>Social Media</h4>
+          <ul class="social-links">
+            <li><a href="https://www.facebook.com/groups/buttsleague/" class="fa fa-facebook"></a></li>
+            <li><a href="https://twitter.com/BUTTSLeague" class="fa fa-twitter"></a></li>
+            <li><a href="https://www.instagram.com/toucanarcheryleague/" class="fa fa-instagram"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; TOUCAN League 2026. Built by Benjamin Pepper.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
